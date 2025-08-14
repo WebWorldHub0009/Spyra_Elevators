@@ -26,7 +26,7 @@ const Navbar = () => {
           <span>📧 info@spyraelevators.com</span>
         </div>
         <div className="hidden lg:flex space-x-4 text-[10px] sm:text-sm">
-          <span>GSTIN: #######</span>
+          <span>GSTIN: 09ABNCS0507M1ZY</span>
           <span>UDYAM: #######</span>
         </div>
       </div>
