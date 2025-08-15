@@ -110,28 +110,30 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="text-gray-900 font-semibold mb-4">Our Services</h4>
-          <ul className="space-y-2">
-            {[
-              "Passenger Elevators",
-              "Goods & Freight Elevators",
-              "Hospital Elevators",
-              "Hydraulic Elevators",
-              "Home Elevators",
-              "MRL (Machine Room-Less) Elevators",
-              "Capsule Elevators",
-              "Elevator Maintenance",
-              "Elevator Modernization",
-            ].map((svc, i) => (
-              <li key={i}>
-                <Link to="/services" className="hover:text-red-700 transition duration-300">
-                  {svc}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+  <h4 className="text-gray-900 font-semibold mb-4">Our Services</h4>
+  <ul className="space-y-2">
+    {[
+      { name: "Passenger Elevators", path: "/services/passenger-elevators" },
+      { name: "Goods & Freight Elevators", path: "/services/goods-freight-elevators" },
+      { name: "Hospital Elevators", path: "/services/hospital-elevators" },
+      { name: "Hydraulic Elevators", path: "/services/hydraulic-elevators" },
+      { name: "Home Elevators", path: "/services/home-elevators" },
+      { name: "MRL (Machine Room-Less) Elevators", path: "/services/mrl-elevators" },
+      { name: "Capsule Elevators", path: "/services/capsule-elevators" },
+      { name: "Elevator Maintenance", path: "/services/elevator-maintenance" },
+      { name: "Elevator Modernization", path: "/services/elevator-modernization" },
+    ].map((svc, i) => (
+      <li key={i}>
+        <Link
+          to={svc.path}
+          className="hover:text-red-700 transition duration-300"
+        >
+          {svc.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
         {/* Address & Socials */}
         <div>
           <h4 className="text-gray-900 font-semibold mb-4">Our Address</h4>

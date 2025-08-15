@@ -3,6 +3,7 @@ import AboutHero from '../Components/AboutHero'
 import AboutSection from '../Components/AboutSection'
 import Showcase from '../Components/Showcase'
 import WhyChooseSpyra from '../Components/WhyChooseSpyra'
+import OwnersInfo from '../Components/OnwersInfo'
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <AboutHero/>
       <AboutSection/>
       <WhyChooseSpyra/>
+      <OwnersInfo/>
     </div>
   )
 }
