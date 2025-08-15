@@ -147,7 +147,7 @@ export default function Footer() {
 
           <div className="flex -ml-24 md:ml-0">
             <Translator className="mb-4" />
-            <div className="w-18"></div>
+            <div className="w-16 md:w-18"></div>
           </div>
 
           <div className="mt-6 flex space-x-4">

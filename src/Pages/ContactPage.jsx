@@ -33,7 +33,7 @@ const ContactPage = () => {
                 We’re here to answer your queries and help you with your elevator needs.
               </p>
 
-              <div className="space-y-6 text-sm sm:text-base text-gray-800">
+              <div id="contact" className="space-y-6 text-sm sm:text-base text-gray-800">
                 <div>
                   <h4 className="font-bold text-black">Phone</h4>
                   <p>+91 9350242481</p>
