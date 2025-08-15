@@ -3,6 +3,8 @@ import Home from "./Pages/Home"
 import Navbar from "./Components/Navbar"
 import ScrollToTop from "./Components/ScrollToTop"
 import FloatingButtons from "./Components/FloatingButtons"
+import Footer from "./Components/Footer"
+import About from "./Pages/About"
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
     </Routes>
+    <Footer/>
     <FloatingButtons/>
     </>
   )
