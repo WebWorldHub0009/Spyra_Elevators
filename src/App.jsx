@@ -7,6 +7,8 @@ import Footer from "./Components/Footer"
 import About from "./Pages/About"
 import ServicesPage from "./Pages/ServicesPage"
 import SingleServicePage from "./Pages/SingleServicePage"
+import Gallery from "./Pages/Gallery"
+import ContactPage from "./Pages/ContactPage"
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/services" element={<ServicesPage/>}/>
       <Route path="/services/:id" element={<SingleServicePage />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
     <Footer/>
     <FloatingButtons/>
