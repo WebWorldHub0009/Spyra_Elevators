@@ -8,6 +8,8 @@ import authLetter from "../assets/documents/auth.pdf";
 import incorporationCert from "../assets/documents/incop.pdf";
 import gstCert from "../assets/documents/gst.pdf";
 import companyBoard from "../assets/documents/board.pdf";
+import udyamReg from "../assets/documents/udyam1.pdf";
+import annexureUdyam from "../assets/documents/udyam2.pdf";
 
 // Updated document list for Spyra Elevators
 const documents = [
@@ -39,6 +41,20 @@ const documents = [
       "Complete company board document containing key information about Spyra Elevators’ directors, structure, and operations.",
     file: companyBoard,
   },
+  {
+    id: 5,
+    name: "Udyam Registration",
+    description:
+      "Our official Udyam Registration certificate under the Ministry of Micro, Small and Medium Enterprises (MSME), Government of India.",
+    file: udyamReg,
+  },
+  {
+    id: 6,
+    name: "Annexure - Udyam Registration",
+    description:
+      "Annexure to our Udyam Registration providing detailed business classifications and compliance information.",
+    file: annexureUdyam,
+  },
 ];
 
 const DocumentsPage = () => {
@@ -65,9 +81,10 @@ const DocumentsPage = () => {
 
       {/* Documents Section */}
       <section className="min-h-screen bg-gradient-to-br from-white via-[#fdf3f3] to-white px-4 py-16">
-       
-
-        <div id="docs" className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div
+          id="docs"
+          className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10"
+        >
           {documents.map(({ id, name, description, file }) => (
             <div
               key={id}

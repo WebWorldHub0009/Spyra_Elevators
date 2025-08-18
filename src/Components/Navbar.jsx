@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex space-x-4 text-[10px] sm:text-sm">
           <span>GSTIN: 09ABNCS0507M1ZY</span>
-          <span>UDYAM: #######</span>
+          <span>UDYAM: UDYAM-UP-02-0091475</span>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
             </p>
             <p>
               <span className="font-semibold text-[#E30613]">UDYAM:</span>{" "}
-              #######
+              UDYAM-UP-02-0091475
             </p>
           </div>
         </nav>
